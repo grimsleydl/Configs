@@ -209,7 +209,7 @@ et () {
 	fi
 }
 findall () {
-	find /media/d /media/h /media/m /media/q /media/oldhome/davo/Z /media/e -iname "*$1*$2*$3*$4*"
+	find /media/d /media/h /media/m /media/q /media/oldhome/davo/Z /media/e -iname "*$1*$2*$3*$4*$5"
 }
 mvw () {
 	mv "$@" && cd "${@[-1]}"
