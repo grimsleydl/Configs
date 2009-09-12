@@ -124,7 +124,7 @@ alias -g L='|less'
 alias dfh='df -h | grep -i /dev/sd'                                    
 alias dt='dut&&dst&&dft'
 alias go='sudo savemixer -L && startx'
-alias im=imageshack-upload
+alias im='imageshack-upload'
 alias l='ls -lh'
 alias ll='l -a'
 alias ls='ls -alF --color=auto --group-directories-first'
@@ -134,11 +134,10 @@ alias nocomment='egrep -v "^\s*(#|$)"'
 alias off='sh ~/bin/off.sh'
 alias pi='sudo powerpill -S'
 alias pu='sudo powerpill -Syu'
-alias run-help=man
+alias run-help='man'
 alias sk='sudo kwrite'
 alias smplayer='schroot -p -- smplayer'
 alias soundrestart='killall ossxmix && sudo savemixer && sudo soundoff && sudo soundon && sudo savemixer -L'
-# alias startx='exec startx'
 alias sv='sudo vim'
 alias tp=tupac
 alias vget='vget --save-dir ~/Videos/'
@@ -208,6 +207,7 @@ et () {
 		echo "'$1' is not a valid file"
 	fi
 }
+# I wish I knew how to automatically separate with a * every argument passed :(
 findall () {
 	find /media/d /media/h /media/m /media/q /media/oldhome/davo/Z /media/e -iname "*$1*$2*$3*$4*$5"
 }
